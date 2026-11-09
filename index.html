@@ -1,114 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Minecraft Backup</title>
-  <meta name="description" content="Aplicativo pessoal para backup automático de servidor Minecraft no Google Drive." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090e0c">
+  <meta name="description" content="Minecraft Backup: projeto pessoal para preservar mundos Minecraft com backups semanais no Google Drive.">
+  <meta property="og:title" content="Minecraft Backup — Seu mundo, sempre a salvo">
+  <meta property="og:description" content="Backups semanais. Google Drive. Quatro versões preservadas. Um projeto pessoal de automação.">
+  <meta property="og:type" content="website">
+  <title>Minecraft Backup · Seu mundo, sempre a salvo</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="page-bg"></div>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
 
-  <header class="topbar">
-    <div class="container topbar-content">
-      <div class="brand">
-        <span class="brand-icon">⛏️</span>
-        <span class="brand-text">Minecraft Backup</span>
-      </div>
-
-      <nav class="nav">
-        <a href="index.html" class="nav-link active">Início</a>
-        <a href="privacy.html" class="nav-link">Privacidade</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Minecraft Backup, início">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <span class="brand-copy"><strong>MC<span class="brand-slash">/</span>BACKUP</strong><small>WORLD PRESERVATION</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="menu-principal" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="menu-principal" aria-label="Navegação principal">
+        <a class="is-current" href="index.html" aria-current="page">Início</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#rotina">Rotina</a>
+        <a href="privacy.html">Privacidade</a>
       </nav>
+      <a class="header-pill" href="#rotina"><span class="status-pulse" aria-hidden="true"></span> SISTEMA DE BACKUP <span aria-hidden="true">↗</span></a>
     </div>
   </header>
 
-  <main>
+  <main id="conteudo">
     <section class="hero container">
-      <div class="hero-card">
-        <span class="badge">Sistema pessoal de backup</span>
-        <h1>
-          Backup automático de servidor
-          <span>Minecraft no Google Drive</span>
-        </h1>
-        <p class="hero-text">
-          Aplicativo pessoal desenvolvido para armazenar backups de um servidor Minecraft
-          de forma segura e automatizada, com integração ao Google Drive, Rclone e GitHub Actions.
-        </p>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> SEU MUNDO NÃO TEM REPLAY</div>
+        <h1>CONSTRUA<br>SEM <span class="accent-outline">MEDO.</span><br><span class="accent-solid">SALVE</span> TUDO.</h1>
+        <p class="hero-lead">Cada bloco tem uma história. Proteja seu mundo Minecraft com uma rotina de backups semanais, armazenamento no Google Drive e versões anteriores para recuperação.</p>
+        <div class="hero-buttons">
+          <a href="#como-funciona" class="btn btn-primary"><span class="btn-glyph" aria-hidden="true">▣</span> EXPLORAR SISTEMA <span aria-hidden="true">↗</span></a>
+          <a href="privacy.html" class="btn btn-ghost">POLÍTICA DE PRIVACIDADE <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-meta"><span class="meta-square" aria-hidden="true"></span> MINECRAFT JAVA / FABRIC <span class="meta-divider">•</span> PROJETO PESSOAL</div>
+      </div>
 
-        <div class="hero-actions">
-          <a href="privacy.html" class="btn btn-primary">Ver Política de Privacidade</a>
-          <a href="#sobre" class="btn btn-secondary">Saiba mais</a>
+      <div class="hero-visual" aria-label="Ilustração estilizada de um bloco de terra e grama inspirado em mundos de blocos">
+        <div class="visual-grid" aria-hidden="true"></div>
+        <div class="hero-visual-topline"><span>WORLD VAULT</span><span>SYS.01</span></div>
+        <img class="world-core" src="assets/world-core.svg" alt="Bloco de grama flutuando sobre um portal verde luminoso" width="580" height="560">
+        <div class="visual-corner corner-tl" aria-hidden="true"></div><div class="visual-corner corner-tr" aria-hidden="true"></div><div class="visual-corner corner-bl" aria-hidden="true"></div><div class="visual-corner corner-br" aria-hidden="true"></div>
+        <div class="hud hud-left"><span class="hud-label">SAVE CYCLE</span><strong>07 DIAS</strong><small>PROGRAMADO</small></div>
+        <div class="hud hud-right"><span class="hud-label">RESTORE POINTS</span><strong>×04</strong><small>VERSÕES</small></div>
+        <div class="visual-bottomline"><span>▰▰▰▰▰▰▱▱</span><span>YOUR WORLD. YOUR RULES.</span></div>
+      </div>
+    </section>
+
+    <section class="metrics-strip container" aria-label="Resumo do projeto">
+      <div class="metric"><span class="metric-symbol">✳</span><div><strong>1× <em>/ SEMANA</em></strong><span>BACKUP PROGRAMADO</span></div></div>
+      <div class="metric"><span class="metric-symbol">▤</span><div><strong>04 <em>VERSÕES</em></strong><span>RETENÇÃO AUTOMÁTICA</span></div></div>
+      <div class="metric"><span class="metric-symbol">☁</span><div><strong>DRIVE <em>/ CLOUD</em></strong><span>ARMAZENAMENTO PESSOAL</span></div></div>
+      <div class="metric"><span class="metric-symbol">⌁</span><div><strong>24/7 <em>READY</em></strong><span>SEM PC LIGADO</span></div></div>
+    </section>
+
+    <section id="como-funciona" class="section container">
+      <div class="section-heading reveal">
+        <div><div class="section-eyebrow">// 01. O PROCESSO</div><h2>TRÊS ETAPAS.<br><span>ZERO DRAMA.</span></h2></div>
+        <p>Uma automação simples trabalhando nos bastidores, para você se concentrar no que importa: jogar.</p>
+      </div>
+      <div class="steps-grid">
+        <article class="step-card reveal"><div class="step-top"><span class="step-no">01 / CAPTURE</span><span class="step-icon icon-save" aria-hidden="true">▣</span></div><div class="step-art art-server" aria-hidden="true"><span class="server-roof"></span><span class="server-main"><i></i><i></i><i></i></span><span class="server-base"></span></div><h3>Seu mundo é salvo</h3><p>O Altare cria uma cópia dos arquivos do servidor, incluindo o mundo e suas configurações.</p><span class="card-tag">ALTARE SERVER</span></article>
+        <article class="step-card reveal"><div class="step-top"><span class="step-no">02 / TRANSFER</span><span class="step-icon icon-cycle" aria-hidden="true">↗</span></div><div class="step-art art-transfer" aria-hidden="true"><span class="transfer-box">⌘</span><span class="transfer-beam"></span><span class="transfer-cloud">☁</span></div><h3>Vai para a nuvem</h3><p>GitHub Actions executa a rotina com Rclone e envia o backup para seu Google Drive.</p><span class="card-tag">GITHUB + RCLONE</span></article>
+        <article class="step-card reveal"><div class="step-top"><span class="step-no">03 / PROTECT</span><span class="step-icon icon-lock" aria-hidden="true">◇</span></div><div class="step-art art-vault" aria-hidden="true"><span class="vault-back"></span><span class="vault-front"><b>04</b></span></div><h3>Quatro chances de voltar</h3><p>As quatro cópias mais recentes são mantidas. As mais antigas saem da rotação automaticamente.</p><span class="card-tag">RETENÇÃO DE 4 BACKUPS</span></article>
+      </div>
+    </section>
+
+    <section class="feature-section container" id="rotina">
+      <div class="feature-panel reveal">
+        <div class="feature-left">
+          <div class="section-eyebrow">// 02. CICLO DE PROTEÇÃO</div>
+          <h2>SEU PROGRESSO<br><span>FICA NA HISTÓRIA.</span></h2>
+          <p>Uma nova cópia entra na coleção a cada domingo. Quando a quinta chega, a mais antiga é removida, mantendo o Drive organizado.</p>
+          <div class="schedule"><span class="schedule-label">ROTINA PROGRAMADA</span><strong>DOMINGO <span>03:20</span></strong><small>HORÁRIO DE BRASÍLIA · EXECUÇÃO PODE ATRASAR</small></div>
+          <a href="privacy.html" class="text-link">COMO SEUS ARQUIVOS SÃO TRATADOS <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="vault-preview" aria-label="Exemplo ilustrativo de quatro cópias mantidas">
+          <div class="vault-top"><span>BACKUP INVENTORY</span><span class="vault-caption">EXEMPLO ILUSTRATIVO</span></div>
+          <div class="vault-list"><div class="vault-item"><span class="slot-id">01</span><div><strong>WORLD_SNAPSHOT_01</strong><small>MAIS RECENTE</small></div><span class="slot-indicator">PRESERVADO</span></div><div class="vault-item"><span class="slot-id">02</span><div><strong>WORLD_SNAPSHOT_02</strong><small>VERSÃO ANTERIOR</small></div><span class="slot-indicator">PRESERVADO</span></div><div class="vault-item"><span class="slot-id">03</span><div><strong>WORLD_SNAPSHOT_03</strong><small>VERSÃO ANTERIOR</small></div><span class="slot-indicator">PRESERVADO</span></div><div class="vault-item"><span class="slot-id">04</span><div><strong>WORLD_SNAPSHOT_04</strong><small>MAIS ANTIGO DOS QUATRO</small></div><span class="slot-indicator">PRESERVADO</span></div></div>
+          <div class="vault-note"><span class="status-pulse" aria-hidden="true"></span> EXIBIÇÃO INFORMATIVA · NÃO É MONITORAMENTO AO VIVO</div>
         </div>
       </div>
     </section>
 
-    <section id="sobre" class="container section">
-      <div class="section-title">
-        <h2>Como funciona</h2>
-        <p>Um fluxo simples, moderno e seguro para proteger seu mundo.</p>
-      </div>
-
-      <div class="grid">
-        <article class="card">
-          <div class="card-icon">🗂️</div>
-          <h3>Criação do backup</h3>
-          <p>
-            O sistema gera backups automáticos dos arquivos do servidor Minecraft hospedado.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">☁️</div>
-          <h3>Envio ao Drive</h3>
-          <p>
-            Os arquivos são enviados para a conta Google autorizada pelo usuário.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">🛡️</div>
-          <h3>Uso pessoal</h3>
-          <p>
-            Este aplicativo é destinado a uso pessoal e não comercial, sem distribuição pública de dados.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section class="container section">
-      <div class="info-panel">
-        <div class="info-text">
-          <h2>Finalidade do aplicativo</h2>
-          <p>
-            Este projeto existe exclusivamente para automatizar cópias de segurança de um servidor Minecraft,
-            preservando arquivos importantes do mundo, configurações e demais dados do servidor.
-          </p>
-          <p>
-            O acesso ao Google Drive é utilizado somente para criar, consultar e armazenar os arquivos
-            de backup gerados pela automação.
-          </p>
-        </div>
-
-        <div class="status-box">
-          <div class="status-line"><span>Tipo</span><strong>Uso pessoal</strong></div>
-          <div class="status-line"><span>Armazenamento</span><strong>Google Drive</strong></div>
-          <div class="status-line"><span>Automação</span><strong>GitHub Actions</strong></div>
-          <div class="status-line"><span>Integração</span><strong>Rclone</strong></div>
-        </div>
-      </div>
+    <section class="privacy-banner container reveal">
+      <div class="privacy-banner-icon" aria-hidden="true">◇</div>
+      <div><div class="section-eyebrow">// PRIVACIDADE EM PRIMEIRO LUGAR</div><h2>O MUNDO É SEU. OS DADOS TAMBÉM.</h2><p>Este é um projeto pessoal. Veja como a autorização do Google Drive é usada e como revogá-la.</p></div>
+      <a href="privacy.html" class="btn btn-primary">LER POLÍTICA <span aria-hidden="true">↗</span></a>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>© 2026 Minecraft Backup — Aplicativo pessoal para automação de backups.</p>
-      <a href="privacy.html">Política de Privacidade</a>
-    </div>
-  </footer>
+  <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><span class="footer-mark">▦</span> MC/BACKUP <small>© 2026 · PROJETO PESSOAL</small></div><p>Site informativo. Os backups são executados pela automação externa, não por esta página. Projeto independente, sem afiliação com Mojang ou Microsoft.</p><div class="footer-links"><a href="index.html">INÍCIO</a><a href="privacy.html">PRIVACIDADE</a><a href="#conteudo">VOLTAR AO TOPO ↑</a></div></div></footer>
 </body>
 </html>

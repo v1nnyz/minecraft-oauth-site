@@ -1,95 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Privacidade | Minecraft Backup</title>
-  <meta name="description" content="Política de privacidade do aplicativo pessoal Minecraft Backup." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090e0c">
+  <meta name="description" content="Política de privacidade do projeto pessoal Minecraft Backup e da integração de backups com o Google Drive.">
+  <title>Privacidade · Minecraft Backup</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-<body>
-  <div class="page-bg"></div>
-
-  <header class="topbar">
-    <div class="container topbar-content">
-      <div class="brand">
-        <span class="brand-icon">🧱</span>
-        <span class="brand-text">Minecraft Backup</span>
-      </div>
-
-      <nav class="nav">
-        <a href="index.html" class="nav-link">Início</a>
-        <a href="privacy.html" class="nav-link active">Privacidade</a>
-      </nav>
+<body class="privacy-page">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Minecraft Backup, início"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span class="brand-copy"><strong>MC<span class="brand-slash">/</span>BACKUP</strong><small>WORLD PRESERVATION</small></span></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="menu-principal" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links" id="menu-principal" aria-label="Navegação principal"><a href="index.html">Início</a><a href="index.html#como-funciona">Como funciona</a><a href="index.html#rotina">Rotina</a><a class="is-current" href="privacy.html" aria-current="page">Privacidade</a></nav>
+      <a class="header-pill" href="index.html"><span class="status-pulse" aria-hidden="true"></span> VOLTAR AO INÍCIO <span aria-hidden="true">↗</span></a>
     </div>
   </header>
 
-  <main class="container section">
-    <div class="content-card">
-      <span class="badge">Documento informativo</span>
-      <h1 class="page-title">Política de Privacidade</h1>
-
-      <div class="content-text">
-        <p>
-          O <strong>Minecraft Backup</strong> é um aplicativo de uso pessoal criado para automatizar
-          backups de um servidor Minecraft no Google Drive.
-        </p>
-
-        <h2>1. Finalidade</h2>
-        <p>
-          Este aplicativo é utilizado exclusivamente para criar, consultar, enviar e organizar arquivos
-          de backup gerados a partir do servidor Minecraft do usuário.
-        </p>
-
-        <h2>2. Dados acessados</h2>
-        <p>
-          O aplicativo pode acessar apenas os arquivos necessários para a operação de backup dentro
-          da conta Google autorizada pelo usuário.
-        </p>
-
-        <h2>3. Armazenamento</h2>
-        <p>
-          Os backups são armazenados somente no Google Drive do próprio usuário autorizado.
-          O aplicativo não realiza compartilhamento público desses arquivos.
-        </p>
-
-        <h2>4. Compartilhamento de dados</h2>
-        <p>
-          Nenhum dado pessoal é vendido, distribuído ou compartilhado com terceiros para fins comerciais.
-        </p>
-
-        <h2>5. Segurança</h2>
-        <p>
-          O acesso ao Google Drive é feito mediante autorização do próprio usuário, podendo ser revogado
-          a qualquer momento nas configurações de segurança da conta Google.
-        </p>
-
-        <h2>6. Revogação de acesso</h2>
-        <p>
-          O usuário pode remover o acesso do aplicativo diretamente em sua conta Google, caso deseje
-          interromper a integração.
-        </p>
-
-        <h2>7. Contato</h2>
-        <p>
-          Este aplicativo é de uso pessoal e sem fins comerciais.
-        </p>
-      </div>
-
-      <div class="hero-actions privacy-actions">
-        <a href="index.html" class="btn btn-primary">Voltar ao início</a>
-      </div>
+  <main id="conteudo" class="container privacy-layout">
+    <header class="privacy-header"><div class="section-eyebrow">// DOCUMENTO 01 — INFORMAÇÕES DE PRIVACIDADE</div><h1>SEU MUNDO.<br><span>SEUS DADOS.</span></h1><p>Como funciona o uso do Google Drive pelo projeto pessoal Minecraft Backup.</p><div class="privacy-header-meta"><span>APLICATIVO PESSOAL</span><span>SEM FINS COMERCIAIS</span><span>ATUALIZADO EM NOVEMBRO DE 2026</span></div></header>
+    <div class="privacy-columns">
+      <aside class="privacy-aside" aria-label="Índice da política"><span>ÍNDICE / 07</span><a href="#objetivo">01. Finalidade</a><a href="#dados">02. Dados utilizados</a><a href="#servicos">03. Serviços envolvidos</a><a href="#retencao">04. Armazenamento e retenção</a><a href="#seguranca">05. Segurança</a><a href="#revogacao">06. Revogar acesso</a><a href="#contato">07. Contato</a></aside>
+      <article class="policy-card">
+        <div class="policy-alert"><span class="policy-alert-icon">✳</span><p><strong>Em resumo:</strong> o aplicativo automatiza backups de um servidor Minecraft para uma conta Google Drive autorizada pelo próprio usuário. Não vende informações nem oferece serviços comerciais.</p></div>
+        <section class="policy-section" id="objetivo"><div class="policy-number">01 / PROPÓSITO</div><h2>Finalidade do aplicativo</h2><p>O <strong>Minecraft Backup</strong> é um projeto pessoal e não comercial que utiliza Rclone e GitHub Actions para transferir cópias de segurança de um servidor Minecraft hospedado no Altare para a conta Google Drive autorizada.</p><p>Este site é apenas informativo: ele não solicita login, não executa os backups diretamente e não possui formulário para envio de arquivos.</p></section>
+        <section class="policy-section" id="dados"><div class="policy-number">02 / DADOS</div><h2>Dados utilizados</h2><p>A automação trata arquivos de backup do servidor, que podem conter mundos salvos, configurações, dados de jogo e informações de jogadores presentes nesses arquivos.</p><p>Para se comunicar com o Google Drive, a automação utiliza credenciais OAuth autorizadas pelo titular da conta. O acesso é configurado para operar nos arquivos disponibilizados ou criados pelo aplicativo, conforme o escopo concedido.</p></section>
+        <section class="policy-section" id="servicos"><div class="policy-number">03 / INFRAESTRUTURA</div><h2>Serviços envolvidos</h2><p>O processo depende de três serviços externos: <strong>Altare</strong> (origem dos arquivos), <strong>GitHub Actions</strong> (execução temporária da automação) e <strong>Google Drive</strong> (armazenamento dos arquivos). Esses provedores processam as informações necessárias ao funcionamento de seus respectivos serviços, segundo suas próprias políticas.</p><p>O projeto não comercializa os dados nem os disponibiliza publicamente.</p></section>
+        <section class="policy-section" id="retencao"><div class="policy-number">04 / ARMAZENAMENTO</div><h2>Armazenamento e retenção</h2><p>Os backups são guardados na conta Google Drive autorizada. A rotina foi configurada para criar uma nova cópia semanalmente e <strong>manter os quatro backups mais recentes</strong>, removendo os anteriores de modo permanente quando exceder esse limite.</p><p>Os arquivos também podem ser excluídos manualmente pelo titular da conta. A disponibilidade de espaço depende do plano de armazenamento utilizado no Google Drive.</p></section>
+        <section class="policy-section" id="seguranca"><div class="policy-number">05 / CONTROLES</div><h2>Segurança e acesso</h2><p>As credenciais utilizadas pela automação são armazenadas como segredos no repositório privado do GitHub, e não no código público deste site. O acesso deve ser restrito à conta do responsável pelo projeto.</p><p>Esta página não utiliza cookies próprios de rastreamento, formulários de captura nem serviços de análise de visitantes. O armazenamento dos backups não elimina a necessidade de testar a restauração periodicamente.</p></section>
+        <section class="policy-section" id="revogacao"><div class="policy-number">06 / CONTROLE DO USUÁRIO</div><h2>Como revogar o acesso</h2><p>O titular pode remover a autorização concedida ao aplicativo em sua conta Google a qualquer momento. Isso interrompe novas operações autenticadas com o Drive, mas não exclui automaticamente os backups já armazenados.</p><a class="inline-link" href="https://myaccount.google.com/connections" target="_blank" rel="noopener noreferrer">GERENCIAR CONEXÕES DA CONTA GOOGLE ↗</a></section>
+        <section class="policy-section" id="contato"><div class="policy-number">07 / SUPORTE</div><h2>Contato</h2><p>Para dúvidas sobre este projeto pessoal, utilize o e-mail de suporte informado na tela de consentimento OAuth do aplicativo Minecraft Backup.</p><p>Esta política descreve o funcionamento desta automação pessoal e pode ser atualizada caso sua configuração mude.</p></section>
+        <div class="policy-end"><span>END OF FILE</span><a href="index.html" class="btn btn-primary">← VOLTAR AO INÍCIO</a></div>
+      </article>
     </div>
   </main>
-
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>© 2026 Minecraft Backup — Aplicativo pessoal para automação de backups.</p>
-      <a href="index.html">Página inicial</a>
-    </div>
-  </footer>
+  <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><span class="footer-mark">▦</span> MC/BACKUP <small>© 2026 · PROJETO PESSOAL</small></div><p>Site informativo. Projeto independente, sem afiliação com Mojang ou Microsoft.</p><div class="footer-links"><a href="index.html">INÍCIO</a><a href="privacy.html">PRIVACIDADE</a><a href="#conteudo">VOLTAR AO TOPO ↑</a></div></div></footer>
 </body>
 </html>
