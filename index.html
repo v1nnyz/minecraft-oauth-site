@@ -1,17 +1,114 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Minecraft Backup</title>
+  <meta name="description" content="Aplicativo pessoal para backup automático de servidor Minecraft no Google Drive." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Minecraft Backup</h1>
-  <p>Aplicativo pessoal para realizar backups
-  de um servidor Minecraft no Google Drive.</p>
-  <p>Utiliza Rclone e automacao pelo GitHub
-  Actions para armazenar os arquivos.</p>
-  <p>Uso pessoal, sem distribuicao comercial.</p>
-  <a href="privacy.html">Politica de Privacidade</a>
+  <div class="page-bg"></div>
+
+  <header class="topbar">
+    <div class="container topbar-content">
+      <div class="brand">
+        <span class="brand-icon">⛏️</span>
+        <span class="brand-text">Minecraft Backup</span>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">Início</a>
+        <a href="privacy.html" class="nav-link">Privacidade</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-card">
+        <span class="badge">Sistema pessoal de backup</span>
+        <h1>
+          Backup automático de servidor
+          <span>Minecraft no Google Drive</span>
+        </h1>
+        <p class="hero-text">
+          Aplicativo pessoal desenvolvido para armazenar backups de um servidor Minecraft
+          de forma segura e automatizada, com integração ao Google Drive, Rclone e GitHub Actions.
+        </p>
+
+        <div class="hero-actions">
+          <a href="privacy.html" class="btn btn-primary">Ver Política de Privacidade</a>
+          <a href="#sobre" class="btn btn-secondary">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="container section">
+      <div class="section-title">
+        <h2>Como funciona</h2>
+        <p>Um fluxo simples, moderno e seguro para proteger seu mundo.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="card-icon">🗂️</div>
+          <h3>Criação do backup</h3>
+          <p>
+            O sistema gera backups automáticos dos arquivos do servidor Minecraft hospedado.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">☁️</div>
+          <h3>Envio ao Drive</h3>
+          <p>
+            Os arquivos são enviados para a conta Google autorizada pelo usuário.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🛡️</div>
+          <h3>Uso pessoal</h3>
+          <p>
+            Este aplicativo é destinado a uso pessoal e não comercial, sem distribuição pública de dados.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="info-panel">
+        <div class="info-text">
+          <h2>Finalidade do aplicativo</h2>
+          <p>
+            Este projeto existe exclusivamente para automatizar cópias de segurança de um servidor Minecraft,
+            preservando arquivos importantes do mundo, configurações e demais dados do servidor.
+          </p>
+          <p>
+            O acesso ao Google Drive é utilizado somente para criar, consultar e armazenar os arquivos
+            de backup gerados pela automação.
+          </p>
+        </div>
+
+        <div class="status-box">
+          <div class="status-line"><span>Tipo</span><strong>Uso pessoal</strong></div>
+          <div class="status-line"><span>Armazenamento</span><strong>Google Drive</strong></div>
+          <div class="status-line"><span>Automação</span><strong>GitHub Actions</strong></div>
+          <div class="status-line"><span>Integração</span><strong>Rclone</strong></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Minecraft Backup — Aplicativo pessoal para automação de backups.</p>
+      <a href="privacy.html">Política de Privacidade</a>
+    </div>
+  </footer>
 </body>
 </html>
